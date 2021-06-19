@@ -22,7 +22,7 @@ function showMovies() {
     let data = JSON.parse (xhr.responseText);
     let textoHTML = '';
 
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < data.results.length; i++) {
         let nomeFilme = data.results[i].title;
         let sinopse = data.results[i].overview;
         let imagem = IMG_PREFIX + data.results[i].poster_path;
