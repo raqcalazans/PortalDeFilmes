@@ -18,24 +18,25 @@ function searchMovies() {
     xhr.send();
 }
 
-
 function showMovies() {
     let data = JSON.parse (xhr.responseText);
     let textoHTML = '';
 
-    for (let i = 0; i < data.results.length; i++) {
+    for (let i = 0; i < 8; i++) {
         let nomeFilme = data.results[i].title;
         let sinopse = data.results[i].overview;
         let imagem = IMG_PREFIX + data.results[i].poster_path;
+        let informacoes = data.results[i].id;
 
-        textoHTML += `<div class="card col-md-4">
-            <img src="${imagem}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">${nomeFilme}</h5>
-                <p class="card-text">${sinopse}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>`
+        textoHTML +=  
+    `<div class="card col-12 col-sm-12 col-md-6 col-lg-3">
+        <img class="poster" src="${imagem}" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${nomeFilme}</h5>
+            <p class="card-text">${sinopse}</p>
+            <a href="https://www.themoviedb.org/movie/${informacoes}" class="btn btn-mais">Saiba mais</a>
+        </div>
+      </div>`
     }
 
     document.getElementById('tela').innerHTML = textoHTML;

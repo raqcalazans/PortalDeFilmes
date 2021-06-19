@@ -12,7 +12,7 @@
     <title>Portal de Filmes</title>
 </head>
 
-<body>
+<body onload="loadMovies()">
     <header class="container-fluid header">
       <section class="row">
           <nav class="navbar navbar-expand-lg navbar-dark">
@@ -195,51 +195,21 @@
 
       <section id="destaque" class="row destaque">
         <div class="row">
-          <div class="col-8">
+          <div class="destaque-header">
             <h1 class="title-body">Populares</h1>
+            <div class="buttons">
+              <button class="btn btn-mais btn-secondary" onclick="loadMovies()">Carregar Filmes</button> 
+              <form class="d-flex">
+                <input class="form-control me-2 input-pesquisa" type="search" placeholder="Digite aqui..." aria-label="Search" id="pesquisa">
+                <button type="button" class="btn btn-secondary btn-search" type="submit" onclick="searchMovies()">Pesquisar</button>
+              </form>
+            </div>
           </div>
-          <button class="btn btn-mais carregar-filmes" onclick="loadMovies()">Carregar Filmes</button> 
-          <form class="d-flex">
-            <input class="form-control me-2 input-pesquisa" type="search" placeholder="Digite aqui..." aria-label="Search" id="pesquisa">
-            <button type="button" class="btn btn-secondary btn-search" type="submit" onclick="searchMovies()">Pesquisar</button>
-          </form>
         </div>
         <div class="row posters" id="tela">
-          <div class="card col-12 col-sm-12 col-md-6 col-lg-3">
-            <img class="poster" src="img/pinoquio_poster.jpg" alt="Poster Pinoquio">
-            <div class="card-body">
-              <h5 class="card-title">Pinóquio</h5>
-                <p class="card-text"></p>
-                <a href="#" class="btn btn-mais">Saiba mais</a>
-            </div>
-          </div>
-          <div class="card col-12 col-sm-12 col-md-6 col-lg-3">
-            <img class="poster" src="img/mortal-kombat.jpg" alt="Poster Mortal Kombat">
-            <div class="card-body">
-              <h5 class="card-title">Pinóquio</h5>
-                <p class="card-text"></p>
-                <a href="#" class="btn btn-mais">Saiba mais</a>
-            </div>
-          </div>
-          <div class="card col-12 col-sm-12 col-md-6 col-lg-3">
-            <img class="poster" src="img/luca.jpg" alt="Poster Luca">
-            <div class="card-body">
-              <h5 class="card-title">Pinóquio</h5>
-                <p class="card-text"></p>
-                <a href="#" class="btn btn-mais">Saiba mais</a>
-            </div>
-          </div>
-          <div class="card col-12 col-sm-12 col-md-6 col-lg-3">
-            <img class="poster" src="img/bela-vinganca-2.jpg" alt="Poster Bela Vingança">
-            <div class="card-body">
-              <h5 class="card-title">Pinóquio</h5>
-                <p class="card-text"></p>
-                <a href="#" class="btn btn-mais">Saiba mais</a>
-            </div>
-          </div>
         </div>
         <div class="button">
-          <button type="button" class="btn btn-secondary btn-mais"><i class="fas fa-plus"></i> Carregar mais filmes</button>
+          <button onclick="loadMovies()" type="button" class="btn btn-secondary btn-mais"><i class="fas fa-plus"></i> Carregar mais filmes</button>
         </div>
       </section>
 
@@ -253,7 +223,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Hermínia Maria</h5>
-                <p class="card-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime voluptates consequuntur sapiente vitae consectetur fugit dolor, molestias deserunt cum velit nulla magnam ea eveniet delectus obcaecati accusantium vel? Expedita."</p>
+                <p class="texto-avaliacao">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime voluptates consequuntur sapiente vitae consectetur fugit dolor, molestias deserunt cum velit nulla magnam ea eveniet delectus obcaecati accusantium vel? Expedita."</p>
               </div>
               <div class="card-footer">
                 <div class="avaliacao-star">
@@ -274,7 +244,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Carlos Alberto</h5>
-                <p class="card-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime voluptates consequuntur sapiente vitae consectetur fugit dolor, molestias deserunt cum velit nulla magnam ea eveniet delectus obcaecati accusantium vel? Expedita."</p>
+                <p class="texto-avaliacao">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime voluptates consequuntur sapiente vitae consectetur fugit dolor, molestias deserunt cum velit nulla magnam ea eveniet delectus obcaecati accusantium vel? Expedita."</p>
               </div>
               <div class="card-footer">
                 <div class="avaliacao-star">
@@ -295,7 +265,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Marcelina Almeida</h5>
-                <p class="card-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime voluptates consequuntur sapiente vitae consectetur fugit dolor, molestias deserunt cum velit nulla magnam ea eveniet delectus obcaecati accusantium vel? Expedita."</p>
+                <p class="texto-avaliacao">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime voluptates consequuntur sapiente vitae consectetur fugit dolor, molestias deserunt cum velit nulla magnam ea eveniet delectus obcaecati accusantium vel? Expedita."</p>
               </div>
               <div class="card-footer">
                 <div class="avaliacao-star">

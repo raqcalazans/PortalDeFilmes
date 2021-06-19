@@ -62,6 +62,10 @@ a:hover {
     padding: 0;
 }
 
+section {
+    padding: 0 3rem 0;
+}
+
 .lancamentos {
     background-color: #e6e6e6;
     padding: 0;
@@ -109,14 +113,15 @@ a:hover {
     background-color: #f3f3f3;
 }
 
-.dropdown {
-    text-align: right;
-    margin: 50px 0px 50px 0px;
-    padding: 0;
+.destaque-header {
+    display: flex;
+    justify-content: space-between;
 }
 
-.carregar-filmes {
-    
+.buttons {
+    display: flex;
+    max-height: 3rem;
+    margin-top: 3rem;
 }
 
 .btn-search {
@@ -128,7 +133,7 @@ a:hover {
 }
 
 .input-pesquisa {
-    width: 10rem;
+    width: 15rem;
 }
 
 .posters {
@@ -139,6 +144,10 @@ a:hover {
     height: 100%;
     width: 100%;
     justify-content: space-between;
+}
+
+.card {
+    margin-bottom: 1rem;
 }
 
 .button {
@@ -182,7 +191,7 @@ a:hover {
     font-weight: bold;
 }
 
-.card-text {
+.texto-avaliacao {
     font-family: 'Cedarville Cursive', cursive;
     font-size: 1.2rem;
 }
