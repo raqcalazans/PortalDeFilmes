@@ -8,6 +8,7 @@ Este site foi criado como projeto da matéria de Desenvolvimento de Interfaces W
 - CSS
 - Bootstrap
 - JavaScript
+- <a target="_blank" href="https://www.themoviedb.org/?language=pt-BR">API The Movie Database</a> 
 
 ## Veja abaixo como o site ficou
 
