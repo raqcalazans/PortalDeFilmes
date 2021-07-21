@@ -11,6 +11,6 @@ Este site foi criado como projeto da matéria de Desenvolvimento de Interfaces W
 
 ## Veja abaixo como o site ficou
 
-<img src="img/site_printo.png">
+<img src="img/site_pronto.png">
 
 Para acessar clique <a target="_blank" href="https://raqcalazans.github.io/PortalDeFilmes/">aqui</a>
